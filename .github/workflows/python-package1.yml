@@ -1,4 +1,4 @@
-name: Test Sum Script
+name: sumtest.py
 
 on: [push, pull_request]
 
