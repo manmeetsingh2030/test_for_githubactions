@@ -1,0 +1,11 @@
+name: Test Sum Script
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Script
+        run: python3 -c "from math_utils import add_numbers; assert add_numbers([10, 20, 30]) == 60"
